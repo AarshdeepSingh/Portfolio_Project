@@ -444,8 +444,6 @@ input:checked + .slider:before {
 
 
 /* Responsive web design for smaller devices */
-
-@media (max-width: 768px) {
     
 
     @media (max-width: 768px) {
@@ -531,4 +529,4 @@ input:checked + .slider:before {
             font-size: 0.9rem;
         }
     }
-}    
+   
