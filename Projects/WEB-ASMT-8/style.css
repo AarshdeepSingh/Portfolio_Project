@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("img.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    text-align: left;
+    padding: 6em;
+}
+
+table {
+    padding: 1em;
+    margin-left: 22em;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+
+label{
+    color: white;
+}
+
+section{
+    margin: 1em;
+}
+
+label{
+    padding: 0.2em;
+}
+
+th, td{
+    padding: 5px;
+}
+
+#submit{
+    background-color: aqua;
+    border: 1px solid aqua;
+    color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label>First Name</label></td>
+                <td><input name="fName" type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Last Name</label></td>
+                <td><input name="lName" type="text"></td>
+            </tr>
+            <tr>
+                <td><label>E-mail</label></td>
+                <td><input name="email" type="email"></td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth</label></td>
+                <td><input name="dob" type="date"></td>
+            </tr>
+            <tr>
+                <td><label>Street Address</label></td>
+                <td><textarea name="textarea"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Province</label></td>
+                <td>
+                    <select name="province">
+                        <option>British Columbia</option>
+                        <option>Alberta</option>
+                        <option>Saskatchewan</option>
+                        <option>Manitoba</option>
+                        <option>Ontario</option>
+                        <option>Quebec</option>
+                        <option>New Brunswick</option>
+                        <option>Nova Scotia</option>
+                        <option>Prince Edward Island</option>
+                        <option>NewFoundland</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>City</label></td>
+                <td><input name="city" type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Postal Code</label></td>
+                <td><input name="postCode" type="text" maxlength="6" placeholder="e.g. (NNN NNN)"></td>
+            </tr>
+            <tr>
+                <td><label>Phone Number</label></td>
+                <td><input name="phone" type="text" placeholder="(nnn) nnn-nnn" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label>Timing</label></td>
+                <td>
+                    <input name="course" type="radio" value="Evening course">
+                    <label>Evening course</label><br>
+                    <input name="course" type="radio" value="Weekend course">
+                    <label>Weekend course</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Course</label></td>
+                <td>
+                    <select name="courseType">
+                        <option>Advanced Python</option>
+                        <option>Java Advanced</option>
+                        <option>Fundamentals of Cloud Computing</option>
+                        <option>Introduction to Project JavaScript</option>
+                        <option>Programming in C</option>
+                        <option>Web Design for Mobile Applications</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input name="submit" type="submit" value="Submit" id="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

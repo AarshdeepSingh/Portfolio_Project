@@ -1,0 +1,141 @@
+<!-- Aarshdeep Singh
+     0838091 -->
+     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarshdeep Singh Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="scripts.js"></script>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">My Portfolio</h1>
+
+            <!-- Dark Mode Toggle Switch -->
+                <div class="dark-mode-toggle">
+                    <span class="dark-mode-label">Dark Mode</span>
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="Images/me.jpg">
+        <div class="container hero-content">
+            <h1>Hi, I'm Aarshdeep Singh</h1>
+            <p>A budding developer passionate about creating modern and functional web applications.</p>
+            <a href="#work" class="btn">View My Work</a>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="work" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <a href="Projects/WEB-ASMT-6/index.html" class="project-item">
+                    <img src="Images/three-column.png" alt="Project 1">
+                    <h3>Three Column Layout</h3>
+                    <p>In this project i created a three column layout using table cell and also created  header and footer. I also give different fonts to all the paragraphs some of which are provided by link and other are by "@font-face".</p>
+                </a>
+                <a href="Projects/WEB-ASMT-8/index.html" class="project-item">
+                    <img src="Images/form.png" alt="Project 2">
+                    <h3>Form</h3>
+                    <p>In this project i created a web form to submit the individual information. I used various of input types like text, gmail, radio, date and select. Moreover, i set a background image and give linear gradient to the form so that it is shown as a box and also give hover effect to the submit button.</p>
+                </a>
+                <a href="Projects/WEB-ASMT-9/WEB-ASMT-9/index.html" class="project-item">
+                    <img src="Images/responsive.png" alt="Project 3">
+                    <h3>Responsive Webpage</h3>
+                    <p>In this project i created a web page with a resposnive design, which will change according to the size of the screen. anything bigger than 715px show three column layout less than that will show two column layout and below the 400px break point everything will be in single column.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+
+            <div class="about-description">
+                <p>
+                    Hi, I'm <strong>Aarshdeep Singh</strong>, a 21-year-old web app developer. 
+                    Originally from India and currently living in Canada, I hold a diploma in Computer Programming. 
+                    I'm passionate about creating modern, user-friendly web applications that make a difference.
+                </p>
+            </div>
+
+        <div class="about-grid">
+            <div class="card">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Proficient in both Frontend and Backend Development</li>
+                    <li>Skilled in building responsive designs</li>
+                    <li>Strong problem-solving skills</li>
+                    <li>Dedicated to continuous learning</li>
+                </ul>
+            </div>
+          
+            <div class="card">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Drawing</li>
+                    <li>Gaming</li>
+                    <li>Badminton</li>
+                    <li>Cooking</li>
+                    <li>Listening to Podcasts</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aarshdeep Singh. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

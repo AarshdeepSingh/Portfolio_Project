@@ -1,0 +1,456 @@
+/* Aarshdeep Singh
+   0838091 */
+
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+
+/* Navigation */
+
+.navbar {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #61dafb;
+}
+
+
+
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(Images/background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    max-width: 200px;
+    margin: 5%;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 5px rgb(44, 44, 44));
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1.5s ease-out forwards; /* Fade-in effect */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 2s ease-out forwards; /* Fade-in effect */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 2.5s ease-out forwards; /* Fade-in effect */
+}
+
+.hero .btn {
+    display: inline-block;
+    background: #61dafb;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 3s ease-out forwards; /* Fade-in effect */
+}
+
+.hero .btn:hover {
+    background: #4b9fda;
+}
+
+
+
+/* Projects Section */
+
+.projects {
+    padding: 4rem 0;
+    background: #fff;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.project-item {
+    margin: 2em 0;
+    text-decoration: none;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.project-item.visible {
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-item h3 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project-item p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
+/* About Section */
+
+.about {
+    padding: 4rem 2rem;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.about-description {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.about-description strong {
+    color: #333;
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-size: 1rem;
+}
+
+
+
+/* Contact Section */
+
+.contact {
+    padding: 4rem 2rem;
+    background: #fff;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact form button {
+    background: #61dafb;
+    color: #333;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.contact form button:hover {
+    background: #4b9fda;
+}
+
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: white;
+}
+
+
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+body.dark-mode .navbar {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+
+body.dark-mode section {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+body.dark-mode .about {
+    background-color: rgb(19, 19, 19);
+}
+
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: white;
+}
+
+body.dark-mode p,
+body.dark-mode p strong,
+body.dark-mode ul li {
+    color: #cbcbcb;
+}
+
+body.dark-mode .card, body.dark-mode .project-item {
+    background-color: #2e2e2e;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+body.dark-mode footer {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+
+
+/* Toggle Switch Styling */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #61dafb;
+}
+
+input:checked + .slider:before {
+    transform: translateX(25px);
+}
+
+.dark-mode-toggle {
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode-label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.dark-mode-label {
+    color: #fff;
+}
+
+
+
+/* Fade-In Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slight upward motion */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

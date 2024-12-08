@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Display Script";
+    src: url("DancingScript-Medium.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    background-color: #556B2F;
+    padding: 10px;
+    color: white;
+    
+}
+
+nav{
+    width: 20%;
+    display: table-cell;
+    background-color:  #B85042;
+    font-style: italic;
+    padding: 10px;
+}
+
+nav ol {
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+figure {
+    float: right;
+    padding-left: 10px;
+}
+
+/* img {
+    filter: drop-shadow(2px 2px 3px black);
+} */
+
+figcaption {
+    text-align: right;
+    font-size: x-small;
+}
+
+article{
+    width: 50%;
+    display: table-cell;
+    background-color: #E7E8D1;
+    padding: 10px;
+}
+
+article p {
+    font-family: "Display Script",sans-serif;
+}
+
+aside{
+    font-family: "Josefin Sans", sans-serif;
+    width: 30%;
+    display: table-cell;
+    background-color: #A7BEAE;
+    padding: 10px;
+}
+
+main section {
+    font-family: "Josefin Sans";
+    background-color: lightblue;
+    width: 100%;
+}
+
+footer p{
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    font-family: "Playfair Display",sans-serif;
+}
+
+#wrap {
+    display: table;
+    min-width: 600;
+    max-width: 1100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h2{
+    padding-bottom: 10px;
+    font-family: "Playfair Display",sans-serif;
+}
+
+h1{
+    font-family: "Playfair Display",sans-serif;
+}
+
+p {
+    padding: 5px;
+    text-align: justify;
+}
